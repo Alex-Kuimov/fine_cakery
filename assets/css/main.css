@@ -186,6 +186,7 @@ h2{
 
 .blog{
     background: #F8F5F2;
+    text-align: center;
 }
 
 .blog-wrap{
@@ -213,3 +214,71 @@ h2{
     overflow: hidden;
     width: 100%;
 }
+
+
+/*
+* About
+*/
+
+
+.about{
+    display: flex;
+}
+
+
+.about__item{
+    margin: 10px;
+    width: 45%;
+}
+
+
+.about h3{
+    font-size: 46px;
+}
+
+
+/*
+* Contact
+*/
+
+
+.contact-us{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-us-wrap{
+    display: flex;
+}
+
+.contact-us__form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-us__form button{
+    text-transform: uppercase;
+    padding: 7px 25px;
+    color: #fff;
+}
+
+
+
+/*
+* Instagram
+*/
+
+
+.instagram-wrap{
+    width: 100%;
+    height: 350px;
+    background: #F8F5F2;
+}
+
+
+/*
+* Footer
+*/
+
