@@ -282,3 +282,42 @@ h2{
 * Footer
 */
 
+
+.footer{
+    background: #291B19;
+    color: #9F7264;
+}
+
+.footer-wrap-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-wrap-col{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer a{
+    color: #9F7264;
+}
+
+.footer-wrap-col img{
+    width: 150px;
+}
+
+.footer-menu{
+    display: flex;
+    width: 60%;
+    flex-wrap: wrap;
+}
+
+.footer-menu__item{
+    width: 250px;
+    margin: 15px 0;
+}
+
+.footer-wrap-col{
+    justify-content: center;
+    align-items: center;
+}    
