@@ -45,6 +45,7 @@ h3{
 p{
     font-family: 'Montserrat', sans-serif;
     line-height: 26px;
+    font-size: 16px;
 }
 
 input, textarea{
@@ -156,7 +157,7 @@ textarea{
 .top-menu__item{
     padding: 35px 15px;
     color: #583934;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .top-menu__item:hover{
@@ -377,6 +378,9 @@ textarea{
 
 .contact-us__subtitle{
     margin-bottom: 60px;
+    font-size: 24px;
+    line-height: 34px;
+    text-align: center;
 }
 
 /*
@@ -404,11 +408,13 @@ textarea{
 .footer-wrap-row{
     display: flex;
     flex-direction: row;
+    padding-top: 60px;
 }
 
 .footer-wrap-col{
     display: flex;
     flex-direction: column;
+    padding-top: 60px;
 }
 
 .footer a{
@@ -421,12 +427,12 @@ textarea{
 
 .footer-menu{
     display: flex;
-    width: 60%;
+    width: 70%;
     flex-wrap: wrap;
 }
 
 .footer-menu__item{
-    width: 250px;
+    width: 265px;
     margin: 15px 0;
 }
 
@@ -434,3 +440,7 @@ textarea{
     justify-content: center;
     align-items: center;
 }    
+
+.footer__copyright{
+    font-size: 14px;
+}
