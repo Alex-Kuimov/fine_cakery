@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fine Cakery</title>
+    <title>The Fine Cakery</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="assets/css/swiper.css">
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/fonts.css">
     <link rel="stylesheet" href="assets/css/main.css">
@@ -47,10 +48,39 @@
         <a href="#" class="top-menu__item">ABOUT US</a>
     </div>
 
-    <section class="slider">
+    <section class="slider swiper-container">
 
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide slider__item">
+                <img src="assets/img/tmp/s01.png">
+                <div class="slider-wrap-bg"></div>
+                <div class="slider-wrap">
+                    <h1 class="slider__title">Cannot choose?</h1>
+                    <p class="slider__text">Check our desserts that can be shipped by post all over the country</p>
+                    <a href="#" class="slider__button">Learn more</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slider__item">
+                <img src="assets/img/tmp/s01.png">
+                <div class="slider-wrap-bg"></div>
+                <div class="slider-wrap">
+                    <h1 class="slider__title">Cannot choose?</h1>
+                    <p class="slider__text">Check our desserts that can be shipped by post all over the country</p>
+                    <a href="#" class="slider__button">Learn more</a>
+                </div>
+            </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+    
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    
     </section>
-
+    
     <section class="favorite">
         <h2>Choose your favorite</h2>
 
@@ -137,6 +167,11 @@
                 <p><i class="fas fa-phone-alt"></i> +41 76 545 21 09</p>
                 <p><i class="fas fa-envelope"></i> hello@thefinecakery.ch</p>
                 <p><i class="fas fa-map-marker-alt"></i> Albulastrasse 42, 8048 Zürich</p>
+
+                <div class="contact-us__item contact-us-social">
+                    <a href="#" class="contact-us-social__item"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="contact-us-social__item"><i class="fab fa-instagram"></i></a>
+                </div>
             </div>
 
             <form class="contact-us__item contact-us__form">
@@ -177,6 +212,8 @@
                     <p><i class="fas fa-map-marker-alt"></i> Albulastrasse 42, 8048 Zürich</p>
 
                     <div class="footer-social">
+                        <a href="#" class="footer-social__item"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="footer-social__item"><i class="fab fa-instagram"></i></a>
                     </div>    
                 </div>
 
@@ -192,5 +229,8 @@
     </section>
 
     <script defer src="assets/js/all.js"></script>
+    <script defer src="assets/js/swiper.js"></script>
+    <script defer src="assets/js/jquery-3.5.1.js"></script>
+    <script defer src="assets/js/script.js"></script>
 </body>
 </html>
