@@ -35,13 +35,27 @@ h2{
     text-align: center;
     text-transform: uppercase;
     font-weight: normal;
+    padding-top: 60px;
+}
+
+h3{
+    font-weight: normal;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 26px;
 }
 
 input, textarea{
     border: 1px solid #D2CAC2;
-    padding: 12px;
-    margin: 12px;
+    padding: 15px;
+    margin: 12px 0;
     font-size: 14px;
+}
+
+textarea{
+    height: 100px;
 }
 
 .container {
@@ -212,11 +226,14 @@ input, textarea{
 
 .favorite__item h3{
     z-index: 1;
+    font-size: 40px;
 }
+
 
 /*
 * Blog
 */
+
 
 .blog{
     background: #F8F5F2;
@@ -234,19 +251,44 @@ input, textarea{
     display: flex;
     flex-direction: column;
     justify-content: start;
-    align-items: center;
-    text-align: center;
+    align-items: start;
+    text-align: left;
     width: 430px;
     height: 550px;
-    border: 1px solid #000;
     background: #fff;
+    color: #55403B;
     margin: 10px;
 }
 
+.blog__item-wrap{
+    margin: 20px;
+}
+
+.blog__item h3{
+    font-size: 26px;
+}
+
+.blog__item span{
+    font-size: 14px;
+}
+
+.blog__item p{
+    font-size: 16px;
+}
+
 .blog__item img{
-    object-fit: contain;
+    object-fit: cover;
     overflow: hidden;
     width: 100%;
+}
+
+.blog__view-more{
+    color: #55403B;
+    font-size: 26px;
+    display: block;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    text-decoration: underline;
 }
 
 
@@ -257,19 +299,44 @@ input, textarea{
 
 .about{
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
 
 .about__item{
     margin: 10px;
-    width: 45%;
+    width: 40%;
+    padding-top: 60px;
+    text-align: center;
 }
 
+.about-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.about-text__line{
+    width: 200px;
+    height: 3px;
+    background: #55403B;
+    margin-bottom: 30px;
+}
 
 .about h3{
     font-size: 46px;
 }
 
+.about a{
+    color: #55403B;
+    font-size: 26px;
+    display: block;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    text-decoration: underline;
+}
 
 /*
 * Contact
@@ -285,6 +352,13 @@ input, textarea{
 
 .contact-us-wrap{
     display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: start;
+}
+
+.contact-us__item{
+    width: 25%;
 }
 
 .contact-us__form{
@@ -295,10 +369,15 @@ input, textarea{
 .contact-us__form button{
     text-transform: uppercase;
     padding: 7px 25px;
+    margin-top: 20px;
     color: #fff;
+    height: 50px;
+    width: 200px
 }
 
-
+.contact-us__subtitle{
+    margin-bottom: 60px;
+}
 
 /*
 * Instagram
