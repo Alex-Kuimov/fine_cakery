@@ -2,13 +2,6 @@
 * Common
 */
 
-
-*::before,
-*::after,
-*::placeholder {
-    transition: all 0.3s linear;
-}
-
 a,
 img,
 svg,
@@ -16,7 +9,7 @@ span,
 label,
 input,
 button {
-    transition: all 0.3s linear;
+    transition: 0.4s;
 }
 
 
@@ -138,6 +131,7 @@ textarea{
 
 .header-lang__link{
     color:#848484; 
+    margin-right:5px;
 }
 
 .header-lang__link_active{
@@ -157,9 +151,10 @@ textarea{
 }
 
 .top-menu__item{
-    padding: 35px 15px;
+    margin: 35px 15px;
     color: #583934;
     font-size: 16px;
+    border-bottom: 1px solid transparent;
 }
 
 .top-menu__item:hover{
@@ -180,6 +175,9 @@ textarea{
 
 .slider__item{
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .slider-wrap-bg{
@@ -195,11 +193,10 @@ textarea{
     position: relative;
     display: flex;
     height: 100%;
-    width: 100%;
+    width: 1500px;
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    margin-left: 100px;
 }
 
 .slider__title{
@@ -214,6 +211,8 @@ textarea{
     z-index: 2;
     color:#fff;
     font-size: 21px;
+    line-height: 32px;
+    margin-bottom: 50px;
 }
 
 .slider__button{
@@ -234,9 +233,47 @@ textarea{
     position: absolute;
 }
 
+.swiper-pagination-bullet {
+    opacity: .5;
+}
+
+.swiper-pagination-bullet-active {
+    background: #ffffff;
+}
+
+.swiper-button-prev.swiper-button-black, .swiper-button-next.swiper-button-black{
+    border: 1px solid #d4d4d5;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background:#d4d4d5;
+}
+
+.swiper-button-prev:after, .swiper-button-next:after{
+    font-size: 20px;
+}
+
+.swiper-button-next{
+    margin-right: 45px; 
+}
+
+.swiper-button-next:after{
+    margin-left: 5px;
+}
+
+.swiper-button-prev{
+    margin-left: 45px;
+}
+
+.swiper-button-prev:after{
+    margin-right: 5px;
+}
+
+
 /*
 * Favorite
 */
+
 
 .favorite-wrap{
     display: flex;
@@ -287,6 +324,17 @@ textarea{
     font-size: 40px;
 }
 
+.favorite__button{
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 15px 40px;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: none    
+}
+
 
 /*
 * Blog
@@ -316,6 +364,11 @@ textarea{
     background: #fff;
     color: #55403B;
     margin: 10px;
+}
+
+.blog__item:hover{
+    text-decoration: underline;
+    box-shadow: 0 10px 6px -6px #efefef;
 }
 
 .blog__item-wrap{
@@ -485,7 +538,7 @@ textarea{
 .footer-wrap-row{
     display: flex;
     flex-direction: row;
-    padding-top: 60px;
+    padding-top: 50px;
 }
 
 .footer-wrap-col{
@@ -505,12 +558,17 @@ textarea{
 .footer-menu{
     display: flex;
     width: 70%;
+    height: 150px;
     flex-wrap: wrap;
 }
 
 .footer-menu__item{
     width: 265px;
-    margin: 15px 0;
+    margin: 13px 0;
+}
+
+.footer-menu__item:hover{
+    text-decoration: underline;
 }
 
 .footer-wrap-col{
