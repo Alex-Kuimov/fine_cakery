@@ -10,35 +10,31 @@ jQuery(document).ready(($) => {
         },
 
         slider: function() {
-
 			var mySwiper = new Swiper('.swiper-container', {
-				// Optional parameters
 				loop: false,
 
-				// If we need pagination
 				pagination: {
 					el: '.swiper-pagination',
 					dynamicBullets: true,
 				},
 
-				// Navigation arrows
 				navigation: {
 					nextEl: '.swiper-button-next',
 					prevEl: '.swiper-button-prev',
 				},
 			})
-
 		},
 		
 		showBtn: function(){
 			let itemID = $(this).attr('id'); 
-			$('#'+itemID+' .favorite__button').fadeIn(100);
-			console.log(itemID);
+			$('#'+itemID+' .favorite__button').addClass('show');
+			$('#'+itemID+' img').addClass('zoom');
 		},
 
 		hideBtn: function(){
 			let itemID = $(this).attr('id'); 
-			$('#'+itemID+' .favorite__button').fadeOut(100);
+			$('#'+itemID+' .favorite__button').removeClass('show');
+			$('#'+itemID+' img').removeClass('zoom');
 		},
 
         init: function () {
