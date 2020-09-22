@@ -618,6 +618,20 @@ textarea{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    font-size: 20px;
+}
+
+.catalog-pagination span{
+    text-decoration: underline;
+    color: #8A6661;
+}
+
+.catalog-pagination a{
+    color: #55403B;
+}
+
+.catalog-pagination__item{
+    margin: 5px;
 }
 
 
