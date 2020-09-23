@@ -52,7 +52,6 @@ jQuery(document).ready(($) => {
 			$('#'+itemID+' .catalog__item-second-image').removeClass('show');
 		},
 
-
         init: function () {
 			spMain.actions();
             spMain.slider();
@@ -62,5 +61,4 @@ jQuery(document).ready(($) => {
 
     spMain.init();
 
-    
 });    
