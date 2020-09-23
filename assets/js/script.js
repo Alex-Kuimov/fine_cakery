@@ -7,6 +7,9 @@ jQuery(document).ready(($) => {
         actions: function () {
 			$('.favorite__item').on('mouseenter', spMain.showBtn);
 			$('.favorite__item').on('mouseleave', spMain.hideBtn);
+
+			$('.catalog__item').on('mouseenter', spMain.showImg);
+			$('.catalog__item').on('mouseleave', spMain.hideImg);
         },
 
         slider: function() {
@@ -36,6 +39,19 @@ jQuery(document).ready(($) => {
 			$('#'+itemID+' .favorite__button').removeClass('show');
 			$('#'+itemID+' img').removeClass('zoom');
 		},
+
+		showImg: function(){
+			let itemID = $(this).attr('id');
+			$('#'+itemID+' .catalog__item-first-image').addClass('hide');
+			$('#'+itemID+' .catalog__item-second-image').addClass('show');
+		},
+
+		hideImg: function(){
+			let itemID = $(this).attr('id');
+			$('#'+itemID+' .catalog__item-first-image').removeClass('hide');
+			$('#'+itemID+' .catalog__item-second-image').removeClass('show');
+		},
+
 
         init: function () {
 			spMain.actions();
