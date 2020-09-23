@@ -84,6 +84,7 @@ textarea{
     opacity: 0!important;
 }
 
+
 /*
 * Header
 */
@@ -632,11 +633,30 @@ textarea{
 
 .catalog__tags span{
     padding: 5px 10px;
-    background: #79977F;
     color: #fff;
     font-size: 12px;
     margin: 5px;
     border-radius: 10px;
+}
+
+.catalog__tag-item_main{
+    background: #8A6A4C;
+}
+
+.catalog__tag-item_green{
+    background: #79977F;
+}
+
+.catalog__tag-item_brown{
+    background: #938A81;
+}
+
+.catalog__tag-item_orange{
+    background: #C28B51;
+}
+
+.catalog__tag-item_gray{
+    background: #A5AEB4
 }
 
 .catalog__title{
