@@ -50,13 +50,28 @@
 
     <div class="container product">
 
-        <div class="product-wrap">
-            <div class="product-slider">
+        <div class="product-wrap product-slider-wrap">
 
+            <div class="swiper-container product-slider-thumbs">
+                <div class="swiper-wrapper">
+                    <img class="swiper-slide" src="assets/img/tmp/i01.jpg">
+                    <img class="swiper-slide" src="assets/img/tmp/i02.jpg">
+                </div>
+            </div>
+
+            <div class="swiper-container product-slider">
+                <div class="swiper-wrapper">
+                    <img class="swiper-slide" src="assets/img/tmp/i01.jpg">
+                    <img class="swiper-slide" src="assets/img/tmp/i02.jpg">
+                </div>
+
+                <!-- Add Arrows -->
+                <div class="swiper-button-next swiper-button-white"></div>
+                <div class="swiper-button-prev swiper-button-white"></div>
             </div>
         </div>
 
-        <div class="product-wrap">
+        <div class="product-wrap product-text-wrap">
             <h1 class="product__title">Raspberry Cloud</h1>
             <div class="catalog__tags">
                 <span class="catalog__tag-item catalog__tag-item_green">Vegan</span>
@@ -99,7 +114,6 @@
         </div>
 
     </div>
-
 
     <section class="reviews">
         <h2>Reviews</h2>
