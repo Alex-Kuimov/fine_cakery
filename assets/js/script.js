@@ -2,7 +2,8 @@ jQuery(document).ready(($) => {
 
     'use strict';
 
-	const stickyNavTop = $('.top-menu').offset().top;
+	const menuTop = $('.top-menu').offset().top;
+	const menu = $('.top-menu').clone().appendTo('.header').css('display','none').addClass('stiky-menu');
 
     let spMain = {
 
@@ -77,19 +78,16 @@ jQuery(document).ready(($) => {
 		stickyMenu: function(){
 			let scrollTop = $(this).scrollTop();
 
-			if (scrollTop >= stickyNavTop) { 
-				$('.top-menu').addClass('stiky');
+			if (scrollTop >= menuTop) { 
+				$('.stiky-menu').fadeIn(400);
 			} else {
-				$('.top-menu').removeClass('stiky');
+				$('.stiky-menu').fadeOut(400);
 			}
-
-			//console.log(scrollTop);
-			console.log(stickyNavTop);
 		},
 
         init: function () {
 			spMain.actions();
-            spMain.slider();
+			spMain.slider();
         },
 
     }
