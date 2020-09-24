@@ -13,7 +13,7 @@ jQuery(document).ready(($) => {
         },
 
         slider: function() {
-			var mySwiper = new Swiper('.swiper-container', {
+			var frontPageSlider = new Swiper('.front-page-slider', {
 				loop: false,
 
 				pagination: {
@@ -25,7 +25,26 @@ jQuery(document).ready(($) => {
 					nextEl: '.swiper-button-next',
 					prevEl: '.swiper-button-prev',
 				},
-			})
+			});
+
+			var productPageSliderThumbs = new Swiper('.product-slider-thumbs', {
+				spaceBetween: 10,
+				slidesPerView: 4,
+				freeMode: true,
+				watchSlidesVisibility: true,
+				watchSlidesProgress: true,
+			});
+			
+			var productPageSlider = new Swiper('.product-slider', {
+				spaceBetween: 10,
+				navigation: {
+				  nextEl: '.swiper-button-next',
+				  prevEl: '.swiper-button-prev',
+				},
+				thumbs: {
+				  swiper: productPageSliderThumbs
+				}
+			});
 		},
 		
 		showBtn: function(){
