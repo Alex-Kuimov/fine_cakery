@@ -759,6 +759,7 @@ textarea{
 
 .product-slider{
     width: 425px;
+    height: 560px;
     margin: 0px;
 }
 
@@ -767,11 +768,11 @@ textarea{
     height: 560px;
     overflow: hidden;
     object-fit: cover;
-    margin: 10px;
 }
 
 .product-slider-thumbs{
     width: 125px;
+    height: 560px;
     margin: 0;
 }
 
@@ -782,11 +783,38 @@ textarea{
 
 .product-slider-thumbs .swiper-wrapper img{
     width: 75px!important;
-    height: 100px;
+    height: 100px!important;
     overflow: hidden;
     object-fit: cover;
     margin: 10px;
     cursor: pointer;
+}
+
+.product-slider .swiper-button-prev.swiper-button-black, .swiper-button-next.swiper-button-black {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}    
+
+.product-slider .swiper-button-next{
+    margin-right: 15px;
+}
+
+.product-slider .swiper-button-prev{
+    margin-left: 15px;
+}
+
+.product-slider .swiper-button-prev:after, .swiper-button-next:after {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.product-slider .swiper-button-next:after{
+    margin-left: 3px;
+}
+
+.product-slider .swiper-button-prev:after {
+    margin-right: 3px;
 }
 
 .product__title{

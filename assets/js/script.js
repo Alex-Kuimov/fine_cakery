@@ -33,6 +33,7 @@ jQuery(document).ready(($) => {
 				freeMode: true,
 				watchSlidesVisibility: true,
 				watchSlidesProgress: true,
+				direction: 'vertical',
 			});
 			
 			var productPageSlider = new Swiper('.product-slider', {
