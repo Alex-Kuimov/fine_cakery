@@ -2,6 +2,8 @@ jQuery(document).ready(($) => {
 
     'use strict';
 
+	const stickyNavTop = $('.top-menu').offset().top;
+
     let spMain = {
 
         actions: function () {
@@ -10,6 +12,8 @@ jQuery(document).ready(($) => {
 
 			$('.catalog__item').on('mouseenter', spMain.showImg);
 			$('.catalog__item').on('mouseleave', spMain.hideImg);
+
+			$(window).scroll(spMain.stickyMenu);
         },
 
         slider: function() {
@@ -28,16 +32,14 @@ jQuery(document).ready(($) => {
 			});
 
 			var productPageSliderThumbs = new Swiper('.product-slider-thumbs', {
-				spaceBetween: 10,
-				slidesPerView: 4,
-				freeMode: true,
-				watchSlidesVisibility: true,
-				watchSlidesProgress: true,
 				direction: 'vertical',
+				slidesPerView: 4,
+				//freeMode: true,
+				//watchSlidesVisibility: true,
+				//watchSlidesProgress: true,
 			});
 			
 			var productPageSlider = new Swiper('.product-slider', {
-				spaceBetween: 10,
 				navigation: {
 				  nextEl: '.swiper-button-next',
 				  prevEl: '.swiper-button-prev',
@@ -70,6 +72,19 @@ jQuery(document).ready(($) => {
 			let itemID = $(this).attr('id');
 			$('#'+itemID+' .catalog__item-first-image').removeClass('hide');
 			$('#'+itemID+' .catalog__item-second-image').removeClass('show');
+		},
+
+		stickyMenu: function(){
+			let scrollTop = $(this).scrollTop();
+
+			if (scrollTop >= stickyNavTop) { 
+				$('.top-menu').addClass('stiky');
+			} else {
+				$('.top-menu').removeClass('stiky');
+			}
+
+			//console.log(scrollTop);
+			console.log(stickyNavTop);
 		},
 
         init: function () {

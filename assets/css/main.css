@@ -162,6 +162,12 @@ textarea{
     text-decoration: underline;
 }
 
+.stiky{
+    top:0;
+    position: fixed;
+    border-bottom: 1px solid #f1f1f1;
+}
+
 
 /*
 * Breadcrumbs
@@ -786,7 +792,8 @@ textarea{
     height: 100px!important;
     overflow: hidden;
     object-fit: cover;
-    margin: 10px;
+    margin-bottom: 15px;
+    margin-left: 10px;
     cursor: pointer;
 }
 
