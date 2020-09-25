@@ -261,7 +261,7 @@ textarea{
     background:#d4d4d5;
 }
 
-.swiper-button-prev:after, .swiper-button-next:after{
+.slider .swiper-button-prev:after, .slider .swiper-button-next:after{
     font-size: 20px;
 }
 
