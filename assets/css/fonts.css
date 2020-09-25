@@ -5,3 +5,11 @@
     font-display: swap;
     src: local('optimum'), url(optimum.ttf) format('ttf');
 }
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'), url(montserrat.woff2) format('woff2');
+}

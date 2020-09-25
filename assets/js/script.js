@@ -5,16 +5,16 @@ jQuery(document).ready(($) => {
 	const menuTop = $('.top-menu').offset().top;
 	const menu = $('.top-menu').clone().appendTo('.header').css('display','none').addClass('stiky-menu');
 
-    let spMain = {
+    let frontEnd = {
 
         actions: function () {
-			$('.favorite__item').on('mouseenter', spMain.showBtn);
-			$('.favorite__item').on('mouseleave', spMain.hideBtn);
+			$('.favorite__item').on('mouseenter', frontEnd.showBtn);
+			$('.favorite__item').on('mouseleave', frontEnd.hideBtn);
 
-			$('.catalog__item').on('mouseenter', spMain.showImg);
-			$('.catalog__item').on('mouseleave', spMain.hideImg);
+			$('.catalog__item').on('mouseenter', frontEnd.showImg);
+			$('.catalog__item').on('mouseleave', frontEnd.hideImg);
 
-			$(window).scroll(spMain.stickyMenu);
+			$(window).scroll(frontEnd.stickyMenu);
         },
 
         slider: function() {
@@ -35,9 +35,6 @@ jQuery(document).ready(($) => {
 			var productPageSliderThumbs = new Swiper('.product-slider-thumbs', {
 				direction: 'vertical',
 				slidesPerView: 4,
-				//freeMode: true,
-				//watchSlidesVisibility: true,
-				//watchSlidesProgress: true,
 			});
 			
 			var productPageSlider = new Swiper('.product-slider', {
@@ -86,12 +83,12 @@ jQuery(document).ready(($) => {
 		},
 
         init: function () {
-			spMain.actions();
-			spMain.slider();
+			frontEnd.actions();
+			frontEnd.slider();
         },
 
     }
 
-    spMain.init();
+    frontEnd.init();
 
 });    
