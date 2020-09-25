@@ -13,11 +13,14 @@ jQuery(document).ready(($) => {
 
 			$('.catalog__item').on('mouseenter', frontEnd.showImg);
 			$('.catalog__item').on('mouseleave', frontEnd.hideImg);
+			
+			$('.back-to-top').on('click', frontEnd.backToTopScroll);
 
 			$(window).scroll(frontEnd.stickyMenu);
+			$(window).scroll(frontEnd.backToTopShow);
         },
 
-        slider: function() {
+        sliders: function() {
 			var frontPageSlider = new Swiper('.front-page-slider', {
 				loop: false,
 
@@ -34,7 +37,7 @@ jQuery(document).ready(($) => {
 
 			var productPageSliderThumbs = new Swiper('.product-slider-thumbs', {
 				direction: 'vertical',
-				slidesPerView: 4,
+				slidesPerView: 5,
 			});
 			
 			var productPageSlider = new Swiper('.product-slider', {
@@ -82,9 +85,23 @@ jQuery(document).ready(($) => {
 			}
 		},
 
+		backToTopShow: function(){
+			let scrollTop = $(this).scrollTop();
+
+			if(scrollTop!= 0) {
+				$('.back-to-top').fadeIn('500').css('display','flex');
+			} else {
+				$('.back-to-top').fadeOut('500').css('display','flex');
+			} 
+		},
+
+		backToTopScroll: function(){
+			$('body,html').animate({scrollTop:0},800);
+		},
+
         init: function () {
 			frontEnd.actions();
-			frontEnd.slider();
+			frontEnd.sliders();
         },
 
     }
