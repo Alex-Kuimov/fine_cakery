@@ -177,3 +177,14 @@ template {
 [hidden] {
   display: none;
 }
+
+
+select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background-image: url(../img/down-arrow.png)!important;
+  background-position: 96% 50%!important;
+  background-repeat: no-repeat!important;
+  background-size: 12px!important;
+}
