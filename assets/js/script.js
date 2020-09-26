@@ -35,9 +35,10 @@ jQuery(document).ready(($) => {
 				},
 			});
 
+			
 			var productPageSliderThumbs = new Swiper('.product-slider-thumbs', {
 				direction: 'vertical',
-				slidesPerView: 5,
+				slidesPerView: 4,
 			});
 			
 			var productPageSlider = new Swiper('.product-slider', {
