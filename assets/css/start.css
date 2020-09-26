@@ -131,7 +131,7 @@ textarea{
     align-items: center;
     z-index: 10;
     background: #fff;
-    width: 100%;
+    width: 100%!important;
 }
 
 .top-menu__item{
@@ -149,6 +149,7 @@ textarea{
     top:0;
     position: fixed;
     border-bottom: 1px solid #f1f1f1;
+    width: 100%!important;
 }
 
 
@@ -216,6 +217,7 @@ textarea{
     z-index: 2;
     color:#fff;
     font-size: 46px;
+    font-weight: normal;
 }
 
 .slider__text{
