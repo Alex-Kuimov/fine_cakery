@@ -124,6 +124,9 @@ textarea{
 * Menu
 */
 
+.mobile-menu{
+    display: none;
+}
 
 .top-menu{
     display: flex;

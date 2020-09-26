@@ -18,6 +18,8 @@ jQuery(document).ready(($) => {
 
 			$(window).scroll(frontEnd.stickyMenu);
 			$(window).scroll(frontEnd.backToTopShow);
+
+			$('.mobile-menu').on('click', frontEnd.menuShow);
         },
 
         sliders: function() {
@@ -98,6 +100,12 @@ jQuery(document).ready(($) => {
 
 		backToTopScroll: function(){
 			$('body,html').animate({scrollTop:0},800);
+		},
+
+		menuShow: function(){
+			//$('.top-menu').css('display', 'flex');
+
+			$('.top-menu').fadeIn('500').css('display', 'flex');
 		},
 
         init: function () {
