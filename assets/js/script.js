@@ -19,7 +19,9 @@ jQuery(document).ready(($) => {
 			$(window).scroll(frontEnd.stickyMenu);
 			$(window).scroll(frontEnd.backToTopShow);
 
-			$('.mobile-menu').on('click', frontEnd.menuShow);
+			$('.show-menu').on('click', frontEnd.menuShow);
+			$('.close-menu').on('click', frontEnd.menuHide);
+
         },
 
         sliders: function() {
@@ -103,9 +105,15 @@ jQuery(document).ready(($) => {
 		},
 
 		menuShow: function(){
-			//$('.top-menu').css('display', 'flex');
-
 			$('.top-menu').fadeIn('500').css('display', 'flex');
+			$('.show-menu').css('display', 'none');
+			$('.close-menu').fadeIn('500');
+		},
+
+		menuHide: function(){
+			$('.top-menu').fadeOut('500');
+			$('.close-menu').css('display', 'none');
+			$('.show-menu').fadeIn('500');
 		},
 
         init: function () {

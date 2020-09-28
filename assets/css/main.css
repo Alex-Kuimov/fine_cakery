@@ -18,6 +18,10 @@
     opacity: 0!important;
 }
 
+.close-menu{
+    display: none;
+}
+
 
 /*
 * Favorite
