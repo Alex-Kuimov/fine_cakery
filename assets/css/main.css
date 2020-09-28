@@ -284,6 +284,11 @@
 */
 
 
+.catalog-menu-wrap{
+    text-align: center;
+    line-height: 28px;
+}
+
 .catalog-menu{
     display: flex;
     flex-direction: column;

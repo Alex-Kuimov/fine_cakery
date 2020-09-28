@@ -386,9 +386,41 @@
         width: 50%;
     }
 
+    .catalog{
+        justify-content: center;
+    }
+
+    .product{
+        flex-direction: column;
+    }
+
+    .product-slider-wrap, .product-text-wrap {
+        width: 100%;
+    }
+
+    .catalog-description p{
+        width: 100%;
+        text-align: center;
+    }
+
+    .catalog-back{
+        padding-left: 0px;
+        text-align: center;
+    }
+
 }
 
-@media screen and (max-width: 667px) {}
+@media screen and (max-width: 667px) {
+
+    .container {
+        width: 600px;
+    }
+
+    .slider .slider-wrap {
+        width: 500px;
+    }
+
+}
 
 @media screen and (max-width: 600px) {}
 
