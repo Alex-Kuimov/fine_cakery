@@ -1,9 +1,17 @@
-@font-face {
+/*@font-face {
     font-family: 'Optimum';
     font-style: normal;
     font-weight: 700;
     font-display: swap;
     src: local('optimum'), url(optimum.ttf) format('ttf');
+}*/
+
+@font-face {
+    font-family: 'Optimum';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Optimum Regular'), local('Optimum-Regular'), url(optimum.woff) format('woff');
 }
 
 @font-face {
