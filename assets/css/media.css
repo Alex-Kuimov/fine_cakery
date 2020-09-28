@@ -420,6 +420,23 @@
         width: 500px;
     }
 
+    .contact-us-wrap{
+        flex-direction: column;
+    }
+
+    .contact-us__item{
+        width: 100%;
+    }
+
+    .contact-us__item{
+        margin-bottom: 30px;
+    }
+
+    .favorite__item {
+        width: 500px;
+        height: 320px;
+    }
+
 }
 
 @media screen and (max-width: 600px) {}
