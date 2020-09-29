@@ -370,12 +370,16 @@
         z-index: 20;
         position: fixed;
         bottom: 65px;
+        width: 100%;
+        justify-content: center;
     }    
 
     .header-lang{
         z-index: 20;
         position: fixed;
         bottom: 23px;
+        width: 100%;
+        justify-content: center;
     }
 
     .close-menu{
