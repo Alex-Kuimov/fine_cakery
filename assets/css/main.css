@@ -191,7 +191,7 @@
 }
 
 .about h3{
-    font-size: 46px;
+    font-size: 36px;
 }
 
 .about a{
@@ -242,7 +242,7 @@
 
 .contact-us__subtitle{
     margin-bottom: 60px;
-    font-size: 24px;
+    font-size: 21px;
     line-height: 34px;
     text-align: center;
 }
@@ -256,12 +256,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 36px;
-    height: 36px;
+    width: 30px;
+    height: 30px;
     background: #583934;
     color: #fff;
     border-radius: 50%;
-    font-size: 21px;
+    font-size: 16px;
     margin-right: 10px;
     margin-top: 20px;
 }
@@ -305,6 +305,7 @@
 }
 
 .catalog-menu__item{
+    font-size: 18px;
     margin: 10px;
     color: #55403B;
 }
@@ -654,6 +655,7 @@
     align-items: center;
     border-radius: 50%;
     padding: 2px;
+    font-family: sans-serif;
 }
 
 
@@ -705,7 +707,7 @@
 
 .footer a{
     color: #9F7264;
-    font-size: 17px;
+    font-size: 18px;
 }
 
 .footer-wrap-col img{
@@ -741,12 +743,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 36px;
-    height: 36px;
+    width: 30px;
+    height: 30px;
     background: #9F7264;
     color: #fff;
     border-radius: 50%;
-    font-size: 21px;
+    font-size: 16px;
     margin-right: 10px;
     margin-top: 20px;
 }

@@ -22,7 +22,7 @@ a{
 }
 
 h2{
-    font-size: 40px;
+    font-size: 34px;
     text-align: center;
     text-transform: uppercase;
     font-weight: normal;
@@ -92,12 +92,12 @@ textarea{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 36px;
-    height: 36px;
+    width: 30px;
+    height: 30px;
     background: #583934;
     color: #fff;
     border-radius: 50%;
-    font-size: 21px;
+    font-size: 16px;
     margin: 5px;
 }
 
@@ -139,7 +139,7 @@ textarea{
 .top-menu__item{
     margin: 35px 20px;
     color: #583934;
-    font-size: 17px;
+    font-size: 18px;
     border-bottom: 1px solid transparent;
 }
 
@@ -218,7 +218,7 @@ textarea{
     position: relative;
     z-index: 2;
     color:#fff;
-    font-size: 46px;
+    font-size: 42px;
     font-weight: normal;
 }
 
