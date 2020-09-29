@@ -432,6 +432,24 @@
         text-align: center;
     }
 
+
+    .product-slider-thumbs .swiper-wrapper, .product-slider-thumbs{
+        display: block;
+    }
+
+    .product-slider, .product-slider .swiper-wrapper img{
+        width: 450px!important;
+        height: 630px;
+    }
+
+    .product-slider-thumbs .swiper-wrapper, .product-slider-thumbs{
+        height: 630px;
+    } 
+
+    .product-wrap{
+        margin-top: 40px;
+    }
+
 }
 
 @media screen and (max-width: 667px) {
