@@ -106,12 +106,16 @@ jQuery(document).ready(($) => {
 
 		menuShow: function(){
 			$('.top-menu').fadeIn('500').css('display', 'flex');
+			$('.header-social').fadeIn('500').css('display', 'flex');
+			$('.header-lang').fadeIn('500').css('display', 'flex');
 			$('.show-menu').css('display', 'none');
 			$('.close-menu').fadeIn('500');
 		},
 
 		menuHide: function(){
 			$('.top-menu').fadeOut('500');
+			$('.header-social').fadeOut('500');
+			$('.header-lang').fadeOut('500');
 			$('.close-menu').css('display', 'none');
 			$('.show-menu').fadeIn('500');
 		},
