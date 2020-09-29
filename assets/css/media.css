@@ -503,7 +503,7 @@
     }
 
     .slider{
-        background: #55403B;
+        
     }
     
     .slider .swiper-button-prev, 
@@ -529,6 +529,8 @@
         position: absolute;
         bottom: 0px;
         align-items: center;
+        background: #55403B;
+        width: 100%;
     }
 
     .slider .slider__item{
@@ -546,6 +548,14 @@
 
     .slider__button{
         padding: 10px 26px;
+    }
+
+    .product-slider-thumbs{
+        width: 100px;
+    }
+
+    .product-slider, .product-slider .swiper-wrapper img {
+        width: 398px!important;
     }
 
     .favorite__item {
