@@ -577,6 +577,10 @@
     .catalog-title {
         font-size: 30px;
     }
+    .favorite__item h3 {
+        font-size: 32px;
+        margin: 3px;
+    }
     .container {
         width: 350px;
     }
@@ -586,7 +590,7 @@
     }
     .blog__item {
         width: 350px;
-        height: 400px;
+        height: 470px;
     }
     .about__item img {
         width: 320px;
@@ -611,11 +615,42 @@
     .catalog__title {
         font-size: 18px;
     }
+    .catalog__button {
+        padding: 3px 15px;
+    }
+    .catalog__currency,
+    .catalog__price {
+        font-size: 16px;
+    }
+    .catalog-menu__item {
+        font-size: 14px;
+        margin: 5px;
+    }
 }
 
 @media screen and (max-width: 375px) {
+    h1,
+    h2 {
+        font-size: 28px;
+        margin: 25px;
+        padding-top: 40px;
+    }
+    .slider__title {
+        font-size: 34px;
+        margin: 0px;
+        padding-top: 10px;
+    }
     .container {
         width: 300px;
+    }
+    .header-logo {
+        width: 130px;
+    }
+    .slider {
+        height: 450px;
+    }
+    .slider__text {
+        line-height: 25px;
     }
     .favorite__item {
         width: 300px;
@@ -623,7 +658,7 @@
     }
     .blog__item {
         width: 300px;
-        height: 280px;
+        height: 430px;
     }
     .about__item img {
         width: 300px;
@@ -632,6 +667,44 @@
     .product-slider .swiper-wrapper img {
         width: 300px!important;
         height: 470px;
+    }
+    .catalog__item {
+        width: 128px;
+    }
+    .catalog__item img {
+        height: 200px;
+    }
+    .catalog__tags {
+        display: none;
+    }
+    .catalog__title {
+        font-size: 15px;
+        line-height: 25px;
+    }
+    .catalog__button {
+        padding: 2px 8px;
+    }
+    .breadcrumbs {
+        font-size: 14px;
+    }
+    .product__title {
+        margin-left: 0px;
+        padding-top: 0;
+    }
+    .product-wrap {
+        margin-top: 30px;
+    }
+    .product__button {
+        top: 362px;
+    }
+    .favorite__button {
+        padding: 6px 25px;
+    }
+    .catalog-description h2 {
+        padding-top: 10px;
+    }
+    .product-wrap .catalog__tags {
+        display: flex;
     }
 }
 
