@@ -318,6 +318,10 @@
     margin-bottom: 20px;
 }
 
+.catalog-description h2 {
+    margin-top: 0px;
+}
+
 .catalog-description p {
     width: 60%;
     text-align: center;
