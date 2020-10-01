@@ -297,14 +297,14 @@
     .header-social {
         z-index: 20;
         position: fixed;
-        bottom: 65px;
+        bottom: 15%;
         width: 100%;
         justify-content: center;
     }
     .header-lang {
         z-index: 20;
         position: fixed;
-        bottom: 23px;
+        bottom: 10%;
         width: 100%;
         justify-content: center;
     }
