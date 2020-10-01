@@ -183,13 +183,14 @@
         width: 450px;
     }
     .catalog {
-        justify-content: center;
+        justify-content: start;
     }
     .catalog__item {
-        width: 385px;
+        width: 228px;
+        margin: 0px 10px 40px 10px;
     }
     .catalog__item img {
-        height: 480px;
+        height: 350px;
     }
     .product-slider-thumbs .swiper-wrapper,
     .product-slider-thumbs {
@@ -238,6 +239,12 @@
     .product-slider-wrap,
     .product-text-wrap {
         width: 50%;
+    }
+    .catalog__item {
+        width: 205px;
+    }
+    .catalog__item img {
+        height: 305px;
     }
     .footer a {
         font-size: 14px;
@@ -311,6 +318,16 @@
     .close-menu {
         position: fixed;
     }
+    .catalog__item {
+        width: 203px;
+        margin: 0px 10px 40px 10px;
+    }
+    .catalog__item img {
+        height: 300px;
+    }
+    .catalog-pagination {
+        padding-top: 40px;
+    }
 }
 
 @media screen and (max-width: 854px) {
@@ -331,9 +348,6 @@
     }
     .contact-us__item {
         width: 50%;
-    }
-    .catalog {
-        justify-content: center;
     }
     .product {
         flex-direction: column;
@@ -365,6 +379,12 @@
     }
     .product-wrap {
         margin-top: 40px;
+    }
+    .catalog__item {
+        width: 319px;
+    }
+    .catalog__item img {
+        height: 430px;
     }
 }
 
@@ -402,6 +422,12 @@
     }
     .favorite__button {
         opacity: 1;
+    }
+    .catalog__item {
+        width: 279px;
+    }
+    .catalog__item img {
+        height: 415px;
     }
 }
 
@@ -462,6 +488,12 @@
         width: 530px;
         height: 570px;
     }
+    .catalog__item {
+        width: 229px;
+    }
+    .catalog__item img {
+        height: 340px;
+    }
     .footer a {
         font-size: 16px;
     }
@@ -511,9 +543,6 @@
     .product-slider-thumbs {
         display: none;
     }
-    .product__button {
-        top: 368px;
-    }
     .show-menu {
         width: 25px;
         height: 25px;
@@ -524,6 +553,15 @@
     }
     .slider__text {
         font-size: 14px;
+    }
+    .catalog__item {
+        width: 178px;
+    }
+    .catalog__item img {
+        height: 265px;
+    }
+    .catalog__tags span {
+        font-size: 10px;
     }
 }
 
