@@ -720,4 +720,19 @@
         width: 280px!important;
         height: 450px;
     }
+    .catalog__item {
+        width: 120px;
+    }
+    .catalog__button {
+        font-size: 12px;
+    }
+    .favorite__button {
+        display: none;
+    }
+    .slider__text {
+        font-size: 12px;
+    }
+    .blog__item {
+        width: 280px;
+    }
 }
