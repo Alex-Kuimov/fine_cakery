@@ -129,6 +129,6 @@ jQuery(document).ready(($) => {
 
     frontEnd.init();
 
-    alert(window.innerWidth);
+    /*alert(window.innerWidth);*/
 
 });
