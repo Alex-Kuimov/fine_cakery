@@ -170,9 +170,13 @@
 
 .blog-back {
     width: 15%;
+}
+
+.blog-back a {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     text-decoration: underline;
+    color: #55403B;
 }
 
 .blog-inner {
@@ -213,6 +217,36 @@
     font-size: 18px;
     text-transform: uppercase;
     font-weight: normal;
+}
+
+
+/*
+* Gallery
+*/
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-wrap {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 65%;
+}
+
+.gallery__item {
+    width: 210px;
+    height: 210px;
+    margin: 10px;
+}
+
+.gallery__item img {
+    width: 100%;
 }
 
 
