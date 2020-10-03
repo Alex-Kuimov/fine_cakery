@@ -159,6 +159,17 @@
     .catalog-menu__item {
         font-size: 16px;
     }
+    .gallery-wrap {
+        width: 85%;
+    }
+    .blog-inner__content .video__wrap {
+        position: relative;
+        padding-bottom: 60%;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        height: 0;
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 1280px) {
@@ -200,6 +211,9 @@
     .product-slider .swiper-wrapper img {
         width: 370px!important;
         height: 500px;
+    }
+    .gallery-wrap {
+        width: 100%;
     }
 }
 
@@ -249,11 +263,21 @@
     .footer a {
         font-size: 14px;
     }
+    .gallery__item {
+        width: 200px;
+        height: 200px;
+    }
+    .blog-back {
+        width: 20%;
+    }
+    .blog-inner {
+        width: 80%;
+    }
 }
 
 @media screen and (max-width: 1024px) {
     p {
-        font-size: 16px;
+        font-size: 14px;
     }
     .slider .slider-wrap {
         width: 835px;
@@ -328,6 +352,12 @@
     .catalog-pagination {
         padding-top: 40px;
     }
+    .blog-back {
+        display: none;
+    }
+    .blog-inner {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 854px) {
@@ -399,6 +429,10 @@
     .favorite__item h3 {
         font-size: 28px;
     }
+    .gallery__item {
+        width: 150px;
+        height: 150px;
+    }
 }
 
 @media screen and (max-width: 667px) {
@@ -451,6 +485,11 @@
     }
     .catalog__item img {
         height: 415px;
+    }
+    .gallery__item {
+        width: 120px;
+        height: 120px;
+        margin: 5px;
     }
 }
 
@@ -529,6 +568,13 @@
         height: 100%;
         margin-bottom: 30px;
     }
+    .blog-inner__image {
+        width: 400px;
+    }
+    .gallery__item {
+        width: 220px;
+        height: 220px;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -591,11 +637,16 @@
     .catalog .catalog__tags span {
         font-size: 10px;
     }
+    .gallery__item {
+        width: 190px;
+        height: 190px;
+    }
 }
 
 @media screen and (max-width: 414px) {
     h1,
-    h2 {
+    h2,
+    .blog-inner__title {
         font-size: 30px;
     }
     .about h3 {
@@ -653,6 +704,13 @@
         font-size: 14px;
         margin: 5px;
     }
+    .blog-inner__image {
+        width: 320px;
+    }
+    .gallery__item {
+        width: 285px;
+        height: 285px;
+    }
 }
 
 @media screen and (max-width: 375px) {
@@ -661,6 +719,13 @@
         font-size: 28px;
         margin: 25px;
         padding-top: 40px;
+    }
+    .blog-inner__title {
+        margin: 0px;
+        font-size: 28px;
+    }
+    .blog-inner__content h2 {
+        margin: 0px;
     }
     p {
         line-height: 23px;
@@ -736,6 +801,9 @@
     }
     .product-wrap .catalog__tags {
         display: flex;
+    }
+    .blog-inner__image {
+        width: 300px;
     }
 }
 
