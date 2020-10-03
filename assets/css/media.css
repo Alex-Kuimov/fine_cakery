@@ -594,6 +594,9 @@
     p {
         font-size: 14px;
     }
+    .favorite__item p {
+        font-size: 14px;
+    }
     .container {
         width: 400px;
     }
@@ -723,12 +726,13 @@
     .blog-inner__title {
         margin: 0px;
         font-size: 28px;
+        padding-bottom: 35px;
     }
     .blog-inner__content h2 {
         margin: 0px;
     }
     p {
-        line-height: 23px;
+        line-height: 24px;
     }
     .slider__title {
         font-size: 34px;
@@ -832,6 +836,9 @@
         font-size: 12px;
     }
     .blog__item {
+        width: 280px;
+    }
+    .blog-inner__image {
         width: 280px;
     }
 }
